@@ -1,0 +1,1 @@
+Ce dossier contiendra les différentes preuves d'une organisation maitrisée, ainsi que la répartition des tâches
