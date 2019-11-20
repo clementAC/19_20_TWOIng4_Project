@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class Navigateur extends React.Component{
@@ -14,7 +13,7 @@ class Navigateur extends React.Component{
     render(){
         return(
             <div className = "navigateur" >
-                <button className = "accueil">Accueil </button>
+                <button className = "accueil">Accueil </button> <br></br> <br></br> <br></br>
                 <button className = "admin">Admin </button>
             </div>
         )

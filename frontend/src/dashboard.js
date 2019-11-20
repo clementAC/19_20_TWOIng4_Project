@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Compteur from './compteur';
 
 class Dashboard extends React.Component{
     constructor(props){
@@ -9,8 +9,9 @@ class Dashboard extends React.Component{
     }
     render(){
         return(
-            <div className = "dashboard" >
-                <p>Je suis dans le Dashboard</p>
+            <div className="dashboard">
+                <p>Je suis dans le Dashboard qui est vraiment un projeet d'info d qualite</p>
+                <Compteur/>
             </div>
         )
     }
