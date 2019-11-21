@@ -4,6 +4,7 @@ import Compteur from './compteur';
 import Camembert from './camembert';
 import Histogramme from './histogramme';
 import Graphe from './graphe';
+import Tableau from './tableau';
 
 
 class Dashboard extends React.Component{
@@ -24,10 +25,13 @@ class Dashboard extends React.Component{
                         <Compteur className="col-12"/> <br></br> 
                       
                     </div>
-                    <div className="row">
+                    <div className="row justify-content-md-center">
                         <Camembert className="col-4"/> 
                         <Histogramme className="col-4"/> 
                         <Graphe className="col-4"/>
+                    </div>
+                    <div className="row justify-content-md-center">
+                        <Tableau className="col-12"/>
                     </div>
 
                 </div>
