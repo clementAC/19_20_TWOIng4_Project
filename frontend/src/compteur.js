@@ -37,12 +37,11 @@ class Compteur extends React.Component{
             <div className="container">
                 <div className="row justify-content-around">
                     <div className="col-8">
-                    <h4 className="text-center"> Temps d'écoute du jour</h4>    
-                    
+                    <h4 className="text-center"> Temps d'écoute du jour</h4> <br></br>
                         <SemiCircleProgressBar percentage={this.state.actu} background="#C0C0C0" stroke={this.state.color} strokeWidth="40" showPercentValue />
                     </div>
                     <div className="col-4">
-                        <br></br>
+                        <br></br> <br></br>
                         <h3 className="text-center">Aujourd'hui,</h3>
                         <h1 className="text-center">3H30</h1>
                         <h3 className="text-center"> d'écoute</h3>

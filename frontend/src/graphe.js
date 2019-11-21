@@ -8,8 +8,16 @@ class Graphe extends React.Component{
         this.state={
             
             series: [{
-                name: "Nombre de nouveaux abonnements",
+                name: "2019",
                 data: [1300,1200 ,300 ,600 ,1200,1000,2000,1400,1250,2030,1900,1741]
+              },
+              {
+                name: "2018",
+                data: [1200,1100 ,600 ,800 ,800,900,1800,2100,1400,1650,989,1800]
+              },
+              {
+                name: "2017",
+                data: [1400,900 ,1200 ,1100 ,1800,2300,990,1300,1210,2130,1650,1211]
               }],
 
             options: {

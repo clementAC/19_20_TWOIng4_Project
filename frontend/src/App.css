@@ -49,3 +49,19 @@
 h4{
   text-decoration: underline;
 }
+
+.artiste{
+  font-style: italic;
+  font-size: small;
+}
+
+.zoom img:hover{
+  width: 110%;
+  height: 110%;
+}
+
+.album {
+  width: 110%;
+  height: 110%;
+}
+

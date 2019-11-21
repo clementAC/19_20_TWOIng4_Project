@@ -5,6 +5,7 @@ import Camembert from './camembert';
 import Histogramme from './histogramme';
 import Graphe from './graphe';
 import Tableau from './tableau';
+import Albums from './albums';
 
 
 class Dashboard extends React.Component{
@@ -32,6 +33,9 @@ class Dashboard extends React.Component{
                     </div>
                     <div className="row justify-content-md-center">
                         <Tableau className="col-12"/>
+                    </div>
+                    <div className="row justify-content-md-center">
+                        <Albums className="col-12"/>
                     </div>
 
                 </div>

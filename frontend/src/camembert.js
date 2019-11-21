@@ -9,7 +9,7 @@ class Camembert extends React.Component{
             options: {
                 labels: ['Jazz', 'Pop', 'Rnb', 'Blues','Rap'],
                 chart: {
-                width: 60
+                width: 20
                 },
                 legend: {
                 position: 'bottom'
