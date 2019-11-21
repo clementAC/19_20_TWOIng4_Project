@@ -12,9 +12,15 @@ class Navigateur extends React.Component{
     }
     render(){
         return(
-            <div className = "navigateur" >
-                <button className = "accueil">Accueil </button> <br></br> <br></br> <br></br>
-                <button className = "admin">Admin </button>
+            <div className = "navigateur"  >
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <button className = "accueil">Accueil </button> <br></br> <br></br> <br></br>
+                </li>
+                <li class="nav-item">
+                    <button className = "admin">Admin </button>
+                </li>                
+            </ul>
             </div>
         )
     }

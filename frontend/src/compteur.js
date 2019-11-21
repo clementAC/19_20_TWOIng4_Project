@@ -14,17 +14,15 @@ class Compteur extends React.Component{
 
     coloriage(){
 
-        const {tier} = (this.state.max);
-        const {dtier} = (this.state.max)*2/3;
         const red =  "#F00808";
         const green = "#F38E315";
         const orange = "#F0B20D";
 
-        if(this.state.actu <= tier)
+        if(this.actu <= 33)
         {
             this.setState({color:red});
         }
-        else if (this.state.actu >= dtier){
+        else if (this.state.actu >= 66){
             this.setState({color: green});
         }
         else {
@@ -36,8 +34,19 @@ class Compteur extends React.Component{
 
         return (
         <div className="compteur">
-            <button className="actu_compteur" onClick={this.coloriage}>Actualiser</button>
-            <SemiCircleProgressBar percentage={this.state.actu} background="#C0C0C0" stroke={this.state.color} strokeWidth="18" showPercentValue />
+            <div className="container">
+                <div className="row justify-content-around">
+                    <div className="col-6">
+                        <button className="actu_compteur" onClick={this.coloriage}>Actualiser</button>
+                        <SemiCircleProgressBar percentage={this.state.actu} background="#C0C0C0" stroke={this.state.color} strokeWidth="18" showPercentValue />
+                    </div>
+                    <div className="col-6">
+                        <h3 className="text-center">Aujourd'hui,</h3>
+                        <h1 className="text-center">3H30</h1>
+                        <h3 className="text-center"> d'écoute</h3>
+                    </div>
+                </div>
+            </div>
         </div>
         );
     }

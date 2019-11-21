@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Compteur from './compteur';
+import Camembert from './camembert';
+import Histogramme from './histogramme';
+
 
 class Dashboard extends React.Component{
     constructor(props){
@@ -10,8 +13,20 @@ class Dashboard extends React.Component{
     render(){
         return(
             <div className="dashboard">
-                <p>Je suis dans le Dashboard qui est vraiment un projeet d'info d qualite</p>
-                <Compteur/>
+                <div className="container-fluid">
+
+                    <div className="row">
+                    <h1 className="col-12 text-center">Dashboard</h1> 
+                    </div>
+                    <div className="row justify-content-md-center">
+                        <Compteur className="col-12"/> <br></br> 
+                    </div>
+                    <div className="row">
+                        <Camembert className="col-4"/> 
+                        <Histogramme className="col-4"/> 
+                    </div>
+
+                </div>
             </div>
         )
     }
