@@ -29,12 +29,14 @@
 }
 
 .container-fluid{
-  background-color: #E7E7E7;
+  background-color: rgb(221, 221, 221);
   border: 0,5px solid;
 }
 
 .dashboard{
   border: 1px solid;
+  color: #4d4d4d;
+
 }
 .nb_h{
   margin-left: 5%;
@@ -44,3 +46,6 @@
   margin-bottom: 4%;
 }
 
+h4{
+  text-decoration: underline;
+}

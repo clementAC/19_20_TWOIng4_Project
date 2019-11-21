@@ -14,9 +14,6 @@ class Histogramme extends React.Component{
 
             options: {
                 labels: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi','Vendredi','Samedi','Dimanche'],
-                chart: {
-                width: 300
-                },
                 legend: {
                 position: 'bottom'
                 }
@@ -30,7 +27,7 @@ class Histogramme extends React.Component{
             <div className="camembert">
                 <h4 className="text-center">Répartition des écoutes</h4>
                 <h4 className="text-center">de la semaine</h4> <br></br>
-                <Chart options={this.state.options} labels={this.state.labels} series={this.state.series} type="bar" />
+                <Chart options={this.state.options} labels={this.state.labels} series={this.state.series} width="350" type="bar" />
             </div>
         )
     }

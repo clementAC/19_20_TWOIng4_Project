@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends Component{
 render(){
   return(
+   
     <div className = "container-fluid" style={{
       backgroundColor: '#FC0C0C0',
       width: '100%',
@@ -17,6 +18,7 @@ render(){
         <Dashboard className = "dashboard col-md-10 "/>
       </div>
     </div>
+   
   )
 }
 
