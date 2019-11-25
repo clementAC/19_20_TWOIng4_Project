@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navigateur from './navigateur';
-import Dashboard from './dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component{
+  
 render(){
   return(
    
@@ -13,15 +13,13 @@ render(){
       width: '100%',
       height: '200%'
     }}> 
-      <div className = "row">
-        <Navigateur className ="navigateur col-md-2"/>
-        <Dashboard className = "dashboard col-md-10 "/>
+      <div className="row justify-content-center">
+      <Navigateur/>
       </div>
+      
     </div>
-   
-  )
-}
-
+  );
+  }
 
 }
 

@@ -27,9 +27,7 @@ class Dashboard extends React.Component{
                         <Graphe className="col-4"/>
                     </div>
                     <div className="row justify-content-md-center">
-        
-                        <Compteur className="col-12"/> <br></br> 
-                      
+                        <Compteur className="col-12"/> <br></br>   
                     </div>
                    
                     <div className="row justify-content-md-center">
