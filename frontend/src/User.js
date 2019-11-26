@@ -32,7 +32,7 @@ class User extends React.Component{
                             ID : 5ddba05efc13ae6c9000006b<br></br>
                             Maison : big<br></br>
                             Localisation : argentina<br></br>
-                            Nombre d'habitant : 2
+                            Nombre d'habitants : 2
                         </Card.Text>
                     </Card.Body>
                 </Card>
