@@ -13,23 +13,23 @@ class User extends React.Component{
 
     constructor(props){
         super(props);
-    }
+            }
 
     render(){
         return (
             <div>
-                <Card style={{ width: '18rem' }}>
-                    <InputGroup className="mb-3">
+                <Card style={{ width: '21rem' }} id = "User">
+                    <InputGroup className="mb-3" id = "Search">
                         <InputGroup.Prepend>
                             <InputGroup.Text>User ID</InputGroup.Text>
                         </InputGroup.Prepend>
                         <FormControl />
                     </InputGroup>
-                    <Card.Img variant="top" src={maison_big} />
+                    <Card.Img variant="top" src={maison_big} roundedCircle />
                     <Card.Body>
                         <Card.Title>Jacques Rossard</Card.Title>
                         <Card.Text>
-                            ID : 5ddba3c0fc13ae6c90000514<br></br>
+                            ID : 5ddba05efc13ae6c9000006b<br></br>
                             Maison : big<br></br>
                             Localisation : argentina<br></br>
                             Nombre d'habitant : 2

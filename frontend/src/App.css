@@ -20,3 +20,26 @@
 .App-link {
   color: #09d3ac;
 }
+
+body{
+  background: linear-gradient(to right, #6A50C7, #E7E6B2);
+
+  /* Obligatoire si on veut "voir" le dégradé */
+  width: 100%;
+  height: 100%;
+}
+#User{
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+#UserSensors{
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+#Search{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+}

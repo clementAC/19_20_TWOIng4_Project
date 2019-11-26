@@ -18,7 +18,7 @@ class UserSensors extends React.Component{
     render(){
         return (
             <div>
-                <Card style={{ width: '40rem' }}>
+                <Card style={{ width: '21rem' }} id = "UserSensors">
                     <DropdownButton id="dropdown-basic-button" title="Location">
                         <Dropdown.Item href="#/action-1">Bathroom</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">Bedroom</Dropdown.Item>
@@ -31,31 +31,22 @@ class UserSensors extends React.Component{
                             <Table striped bordered hover>
                                 <thead>
                                 <tr>
-                                    <th>#</th>
                                     <th>ID</th>
-                                    <th>Type</th>
-                                    <th>Creation Date</th>
                                     <th>Value</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>1</td>
                                     <td>5ddba05efc13ae6c9000006b</td>
-                                    <td>humidity</td>
-                                    <td>2019-08-20</td>
                                     <td>30</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>5ddba05ffc13ae6c900000a5</td>
+                                    <td>6</td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td colSpan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <td>5ddba05ffc13ae6c900000c3</td>
+                                    <td>1</td>
                                 </tr>
                                 </tbody>
                             </Table>
