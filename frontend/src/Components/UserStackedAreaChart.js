@@ -44,18 +44,20 @@ class UserStackedAreaChart extends React.Component{
 
     render() {
         return (
-            <AreaChart
-                width={500}
-                height={300}
-                data={this.state.data}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="date" />
-                <YAxis />
-                <Tooltip />
-                <Area type="monotone" dataKey="nbVente" stackId="1" stroke="#8884d8" fill="#8884d8" />
-                <Area type="monotone" dataKey="utilisation" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
-            </AreaChart>
+            <Card style={{ width: '33rem' }} id = "User">
+                <AreaChart
+                    width={500}
+                    height={300}
+                    data={this.state.data}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="date" />
+                    <YAxis />
+                    <Tooltip />
+                    <Area type="monotone" dataKey="nbVente" stackId="1" stroke="#8884d8" fill="#8884d8" />
+                    <Area type="monotone" dataKey="utilisation" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
+                </AreaChart>
+            </Card>
         );
     }
 }
