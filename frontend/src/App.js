@@ -12,6 +12,7 @@ import {render} from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import UserBarChart from "./Components/UserBarChart";
 import UserStackedAreaChart from "./Components/UserStackedAreaChart";
+import UserPieChart from "./Components/UserPieChart";
 
 
 const Nav = () => (
@@ -32,6 +33,7 @@ const HomePage = () =>
                 <UserSensors></UserSensors>
                 <UserBarChart></UserBarChart>
                 <UserStackedAreaChart></UserStackedAreaChart>
+                <UserPieChart></UserPieChart>
             </aside>
         </div>
     </body>;
