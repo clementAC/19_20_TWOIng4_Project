@@ -32,18 +32,20 @@ class UserBarChart extends React.Component{
 
     render() {
         return (
-            <BarChart
-                width={400}
-                height={300}
-                data={this.state.data}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="type" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="NombreVente" fill="#1FA4DF" />
-            </BarChart>
+            <Card style={{ width: '26rem' }} id = "User">
+                <BarChart
+                    width={400}
+                    height={300}
+                    data={this.state.data}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="type" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="NombreVente" fill="#1FA4DF" />
+                </BarChart>
+            </Card>
         );
     }
 }
