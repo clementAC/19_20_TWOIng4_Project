@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import './css/formStyle.css'
 import Form from './Components/Form.js'
-import User from './User.js';
-import UserSensors from './UserSensors.js';
+import User from './Components/User.js';
+import UserSensors from './Components/UserSensors.js';
 
 class App extends React.Component {
     constructor(props){

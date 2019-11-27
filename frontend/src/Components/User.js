@@ -1,7 +1,7 @@
 import React from "react";
-import './App.css';
-import maison_big from './img/maison_big.jpg'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
+import house_big from '../img/house_big.png'
+import '../css/bootstrap.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -25,7 +25,7 @@ class User extends React.Component{
                         </InputGroup.Prepend>
                         <FormControl />
                     </InputGroup>
-                    <Card.Img variant="top" src={maison_big} roundedCircle />
+                    <Card.Img variant="top" src={house_big} roundedCircle />
                     <Card.Body>
                         <Card.Title>Jacques Rossard</Card.Title>
                         <Card.Text>

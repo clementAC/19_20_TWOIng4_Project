@@ -1,6 +1,6 @@
 import React from "react";
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
+import '../css/bootstrap.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
