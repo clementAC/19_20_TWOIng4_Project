@@ -1,10 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './css/formStyle.css'
 import Form from './Components/Form.js'
+import User from './User.js';
+import UserSensors from './UserSensors.js';
 
-function App() {
+class App extends React.Component {
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return (
+            <body>
+            <div class = "wrapper">
+                <aside>
+                    <User></User>
+                    <UserSensors></UserSensors>
+                </aside>
+            </div>
+            </body>
+        );
+    }
   return (
     <div className="App">
       <header className="App-header">
