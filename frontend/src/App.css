@@ -34,17 +34,19 @@ body{
 }
 
 #User{
-  margin-left: 20px;
-  margin-top: 30px;
+
 }
 
 #UserSensors{
-  margin-left: 20px;
-  margin-bottom: 30px;
+
 }
 
 #Search{
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 5%;
+}
+
+.BarChart{
+  background-color: white;
 }

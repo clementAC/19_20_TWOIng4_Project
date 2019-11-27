@@ -10,6 +10,7 @@ import UserSensors from './Components/UserSensors.js';
 import { Component } from 'react';
 import {render} from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import UserBarChart from "./Components/UserBarChart";
 
 const Nav = () => (
     <div>
@@ -23,10 +24,11 @@ const Nav = () => (
 //page d'accueil
 const HomePage = () =>
     <body>
-        <div className="wrapper">
+        <div class="wrapper">
             <aside>
                 <User></User>
-                <UserSensors></UserSensors>
+                    <UserSensors></UserSensors>
+                    <UserBarChart></UserBarChart>
             </aside>
         </div>
     </body>;
