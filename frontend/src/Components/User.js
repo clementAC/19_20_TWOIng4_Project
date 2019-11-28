@@ -25,7 +25,7 @@ class User extends React.Component{
                         </InputGroup.Prepend>
                         <FormControl />
                     </InputGroup>
-                    <Card.Img variant="top" src={house_big} roundedCircle />
+                    <Card.Img variant="top" src={house_big} />
                     <Card.Body>
                         <Card.Title>Jacques Rossard</Card.Title>
                         <Card.Text>

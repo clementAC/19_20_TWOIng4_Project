@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import UserBarChart from "./Components/UserBarChart";
 import UserStackedAreaChart from "./Components/UserStackedAreaChart";
 import UserPieChart from "./Components/UserPieChart";
+import UserLastMeasureCard from "./Components/UserLastMeasureCard";
 
 
 const Nav = () => (
@@ -34,6 +35,7 @@ const HomePage = () =>
                 <UserBarChart></UserBarChart>
                 <UserStackedAreaChart></UserStackedAreaChart>
                 <UserPieChart></UserPieChart>
+                <UserLastMeasureCard></UserLastMeasureCard>
             </aside>
         </div>
     </body>;
