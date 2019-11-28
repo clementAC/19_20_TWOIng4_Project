@@ -16,28 +16,18 @@ class UserPieChart extends React.Component{
         super(props);
         this.state = {
             data01 : [
-                { name: 'Group A', value: 400 }, { name: 'Group B', value: 300 },
-                { name: 'Group C', value: 300 }, { name: 'Group D', value: 200 },
-                { name: 'Group E', value: 278 }, { name: 'Group F', value: 189 },
+                { name: 'Temperature', value: 400 }, { name: 'AirPollution', value: 300 },
+                { name: 'Humidity', value: 300 }
             ],
-            data02 : [
-                { name: 'Group A', value: 2400 }, { name: 'Group B', value: 4567 },
-                { name: 'Group C', value: 1398 }, { name: 'Group D', value: 9800 },
-                { name: 'Group E', value: 3908 }, { name: 'Group F', value: 4800 },
-            ]
-
         };
     }
 
     render() {
         return (
-            <Card style={{ width: '28rem' }} id = "User">
-                <PieChart width={400} height={400}>
-                    <Pie dataKey="value" isAnimationActive={false} data={this.state.data01} cx={200} cy={200} outerRadius={80} fill="#8884d8" label />
-                    <Pie dataKey="value" data={this.state.data02} cx={500} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d" />
+                <PieChart width={300} height={300}>
+                    <Pie dataKey="value" isAnimationActive={false} data={this.state.data01} cx={150} cy={150} outerRadius={80} fill="#1FA4DF" label />
                     <Tooltip />
                 </PieChart>
-            </Card>
         );
     }
 }
