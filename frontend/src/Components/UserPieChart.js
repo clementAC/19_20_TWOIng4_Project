@@ -16,8 +16,8 @@ class UserPieChart extends React.Component{
         super(props);
         this.state = {
             data01 : [
-                { name: 'Temperature', value: 400 }, { name: 'AirPollution', value: 300 },
-                { name: 'Humidity', value: 300 }
+                { name: 'Bathroom', value: 120 }, { name: 'Bedroom', value: 223 },
+                { name: 'Entrance', value: 300 }, { name: 'Livingroom', value: 327 }
             ],
         };
     }
