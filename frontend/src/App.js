@@ -1,41 +1,35 @@
 import React from 'react';
 import './App.css';
 import './css/formStyle.css'
-import Form from './Components/Form.js'
+import Form from './Components/FormSensor.js'
 import User from './Components/User.js';
 import UserSensors from './Components/UserSensors.js';
 
+
 //routage pour switcher entre les deux pages
 //TODO: npm install react-router-dom
-import { Component } from 'react';
-import {render} from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import UserBarChart from "./Components/UserBarChart";
 import UserStackedAreaChart from "./Components/UserStackedAreaChart";
 import UserPieChart from "./Components/UserPieChart";
+import Nav from 'react-bootstrap/Nav'
 import UserLastMeasureCard from "./Components/UserLastMeasureCard";
 
 
-const Nav = () => (
-    <div>
-        <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/form">Form</Link></li>
-        </ul>
-    </div>
-);
 
 //page d'accueil
 const HomePage = () =>
     <body>
-        <div class="wrapper">
-            <aside>
+        <div className="wrapper">
+            <div id={"side_bar"}>
                 <User></User>
                 <UserSensors></UserSensors>
+
+            </div>
+            <div id={"main_part"}>
                 <UserBarChart></UserBarChart>
                 <UserStackedAreaChart></UserStackedAreaChart>
                 <UserPieChart></UserPieChart>
-                <UserLastMeasureCard></UserLastMeasureCard>
             </aside>
         </div>
     </body>;
@@ -59,19 +53,21 @@ class App extends React.Component {
     render(){
         return (
             <Router>
-                {/* Router component can have only 1 child. We'll use a simple
-          div element for this example. */}
                 <div>
-                    <Nav />
-                    <Route exact path="/" component={HomePage} />
+                    <Nav variant="tabs" defaultActiveKey="/home">
+                        <Nav.Item>
+                            <Nav.Link href="/home">Home</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="/form" eventKey="link-1">Form</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                    <Route exact path="/home" component={HomePage} />
                     <Route path="/form" component={FormPage} />
                 </div>
             </Router>
         );
     }
-
-
-
 }
 
 export default App;

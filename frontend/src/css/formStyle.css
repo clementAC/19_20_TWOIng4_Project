@@ -32,6 +32,9 @@
     -webkit-animation: mover 2s infinite  alternate;
     animation: mover 1s infinite  alternate;
 }
+.form-image{
+    min-width: 60%;
+}
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
@@ -48,6 +51,7 @@
 .register .register-form{
     padding: 10%;
     margin-top: 10%;
+    width: 100%;
 }
 .btnRegister{
     float: right;
@@ -92,4 +96,7 @@
     margin-top: 8%;
     margin-bottom: -15%;
     color: #495057;
+}
+.sensor_{
+    background-color: white;
 }
