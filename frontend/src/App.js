@@ -14,6 +14,7 @@ import UserBarChart from "./Components/UserBarChart";
 import UserStackedAreaChart from "./Components/UserStackedAreaChart";
 import UserPieChart from "./Components/UserPieChart";
 import UserLastMeasureCard from "./Components/UserLastMeasureCard";
+import CardDeck from "react-bootstrap/CardDeck";
 
 
 const Nav = () => (
@@ -28,15 +29,25 @@ const Nav = () => (
 //page d'accueil
 const HomePage = () =>
     <body>
-        <div class="wrapper">
-            <aside>
-                <User></User>
-                <UserSensors></UserSensors>
-                <UserBarChart></UserBarChart>
-                <UserStackedAreaChart></UserStackedAreaChart>
-                <UserPieChart></UserPieChart>
-                <UserLastMeasureCard></UserLastMeasureCard>
-            </aside>
+        <div className="wrapper">
+            <div className="row">
+
+                <div className="col">
+                    <User/>
+                    <UserSensors/>
+                </div>
+
+                <div className="col">
+                    <UserBarChart/>
+                    <UserPieChart/>
+                </div>
+
+                <div className="col">
+                    <UserStackedAreaChart/>
+                    <UserLastMeasureCard/>
+                </div>
+
+            </div>
         </div>
     </body>;
 
