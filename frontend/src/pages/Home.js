@@ -2,6 +2,7 @@ const Home =() =>{
     return (
         <div className="home">
             <h1>Accueil</h1>
-        </div>)
+            
+        </div>);
 }
 export default Home;
