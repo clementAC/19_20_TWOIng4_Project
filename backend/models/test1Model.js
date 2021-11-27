@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const PostsModel = mongoose.model(
     "projetweb",
     {
-        id: {
+        age: {
             type: String,
             required: true
         },
