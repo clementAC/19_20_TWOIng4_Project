@@ -14,14 +14,17 @@ const Favoris = () => {
         console.log(data);
     }, []);
     
+    const {items} = data;
+
+    // var tableau = items.map( obj => {
+    //     var robj ={};
+    //     robj[obj.name] = obj.label;
+    //     return robj;
+    // });
     
     return (
         <div className="favoris">
-            <ul className="liste-apareil">
-                {data.map((items) => (
-                    <li>{items.name}</li>
-                ))}
-            </ul>
+            
         </div>
     );
 };

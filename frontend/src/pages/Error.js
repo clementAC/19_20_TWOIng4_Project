@@ -6,6 +6,7 @@ const Error = () => {
         <div className="error">
             <Navigation />
             <h1>Erreur. La page que vous demandez n'existe pas</h1>
+            <p>Lfnzkubfeiqbsukvbelivnlenle </p>
         </div>
     );
 };
