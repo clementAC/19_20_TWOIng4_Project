@@ -1,9 +1,14 @@
 import React from 'react';
+import Favoris from '../components/Favoris';
+import Navigation from '../components/Navigation';
 
 const Home =() =>{
     return (
         <div className="home">
-            <h1>Accueil</h1>
+            <Navigation />
+            <Favoris/>
+            
+            
         </div>);
 }
 export default Home;

@@ -1,16 +1,16 @@
 import React from 'react';
 import Home from './pages/Home';
-import { BrowserRouteur, Switch, Route} from "react-router-dom";
+import Error from './pages/Error';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <BrowserRouteur>
-        <Switch>
-          <Route path="/" component={Home}/>
-        </Switch>
-      </BrowserRouteur>
-    </div>
+      <BrowserRouter>
+        <Routes>
+            <Route exact path="/" element={<Home/>} />
+            <Route path="*" element={<Error/>} />
+        </Routes>
+      </BrowserRouter>
   );
 };
 
