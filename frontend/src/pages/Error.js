@@ -1,12 +1,15 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
+import notfound from '../elements/notfound.gif';
 
 const Error = () => {
     return (
         <div className="error">
             <Navigation />
-            <h1>Erreur. La page que vous demandez n'existe pas</h1>
-            <p>Lfnzkubfeiqbsukvbelivnlenle </p>
+            <img className="imgerror" src={notfound} alt="Not found"/>
+            <h1>Error. La page n'a pas été trouvé</h1>
+            <Footer/>
         </div>
     );
 };
