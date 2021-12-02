@@ -1,0 +1,52 @@
+.widget{
+    font-weight: 500;
+    min-height: 150px;
+    background-color: #EFF5FB;
+    padding : 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.widget:hover{
+    background: linear-gradient(to top, white, #5ae0ce);
+    box-shadow: 1px 1px 10px rgb(206, 206, 206);
+}
+
+.widgetlong{
+    font-weight: 500;
+    font-family: "Arial";
+    min-height: 75px;
+    background-color: #EFF5FB;
+    padding : 1em;
+    margin: 0.3em;
+    border-radius: 10px;
+}
+.widgetlong:hover{
+    background: linear-gradient(to top, white, #FCC47E);
+    box-shadow: 1px 1px 10px rgb(206, 206, 206);
+}
+
+.widgetcourt{
+    font-weight: 500;
+    min-height: 75px;
+    background-color: #EFF5FB;
+    padding : 1em;
+    margin: 0.3em;
+    border-radius: 10px;
+}
+.widgetcourt:hover{
+    background: linear-gradient(to top, white, #FCC47E);
+    box-shadow: 1px 1px 10px rgb(206, 206, 206);
+}
+
+.widgetscene{
+    font-weight: 500;
+    min-height: 75px;
+    background-color: #EFF5FB;
+    padding : 1em;
+    margin: 0.3em;
+    border-radius: 10px;
+}
+.widgetscene:hover{
+    background: linear-gradient(to top, white, #004F8F);
+    box-shadow: 1px 1px 10px rgb(206, 206, 206);
+}
