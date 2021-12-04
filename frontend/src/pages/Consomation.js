@@ -7,11 +7,11 @@ import SectionAppareils from '../components/SectionAppareils';
 import SectionScene from '../components/SectionScene';
 
 
-const Home =() =>{
+const Consomation =() =>{
     return (
-        <div className="home">
+        <div className="consomation">
             <Navigation />
-            <Row lg md xs ="4" className="sectionPrincipal"><h1 className="titrePrincipal">Accueil</h1></Row>
+            <Row lg md xs ="4" className="sectionPrincipal"><h1 className="titrePrincipal">Consomation</h1></Row>
             <Container>
                 <Row lg md xs ="4" className="titre">Maison</Row>
                 <SectionMaison/>
@@ -24,4 +24,4 @@ const Home =() =>{
             
         </div>);
 }
-export default Home;
+export default Consomation;

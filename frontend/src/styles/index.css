@@ -1,4 +1,5 @@
 @import "./_settings.css";
 @import "components/_navigation.css";
 @import "components/_widget.css";
-@import "components/_footer.css"
+@import "components/_footer.css";
+@import "components/_historique.css";
