@@ -13,12 +13,13 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     const newRecord = new PostsModel({
-        age: req.body.age,
-        name: req.body.name
+        value: req.body.value,
+        unit: req.body.unit,
+        date: req.body.date
     });
 
     newRecord.save((err, docs) => {
-        if(!err) res.send(docs);
+        if (!err) res.send(docs);
         else console.log('Error creating new data : ' + err);
     })
 });
@@ -27,16 +28,17 @@ router.post('/', (req, res) => {
 router.put("/:id", (req, res) => {
     if (!ObjectID.isValid(req.params.id))
         return res.status(400).send("ID unknow : " + req.params.id)
-    
+
     const updateRecord = {
-        age: req.body.age,
-        name: req.body.name
+        value: req.body.value,
+        unit: req.body.unit,
+        date: req.body.date
     };
 
     PostsModel.findByIdAndUpdate(
         req.params.id,
-        { $set: updateRecord},
-        { new: true},
+        { $set: updateRecord },
+        { new: true },
         (err, docs) => {
             if (!err) res.send(docs);
             else console.log('Update error : ' + err);
@@ -47,7 +49,7 @@ router.put("/:id", (req, res) => {
 router.delete("/:id", (req, res) => {
     if (!ObjectID.isValid(req.params.id))
         return res.status(400).send("ID unknow : " + req.params.id)
-    
+
     PostsModel.findByIdAndRemove(
         req.params.id,
         (err, docs) => {
