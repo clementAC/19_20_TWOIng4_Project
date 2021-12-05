@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import SectionMaison from '../components/SectionMaison';
 import SectionAppareils from '../components/SectionAppareils';
 import SectionScene from '../components/SectionScene';
+import Test from '../components/Test';
 
 
 const Home =() =>{
@@ -20,6 +21,8 @@ const Home =() =>{
                 <SectionScene/>
             </Container>
             <Footer/>
+
+            <Test/>
             
         </div>);
 }
