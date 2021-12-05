@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col} from 'react-bootstrap';
 import WidgetAppareilsLong from './WidgetAppareilsLong';
 import WidgetAppareilsCourt from './WidgetAppareilsCourt';
+import RequestTemperature from '../request/RequestTemperature.js';
 
 const SectionAppareils = () => {
     return (
@@ -13,7 +14,7 @@ const SectionAppareils = () => {
                     <WidgetAppareilsLong/>
                 </Col>
                 <Col xs ="12" md lg="3">
-                    <WidgetAppareilsCourt/>
+                    <RequestTemperature/>
                 </Col>
                 <Col xs ="12" md lg="3">
                     <WidgetAppareilsCourt/>

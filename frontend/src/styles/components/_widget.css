@@ -11,6 +11,19 @@
     box-shadow: 1px 1px 10px rgb(206, 206, 206);
 }
 
+.widgetT{
+    font-weight: 500;
+    min-height: 60px;
+    background-color: #EFF5FB;
+    padding : 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.widgetT:hover{
+    background: linear-gradient(to top, white, #5ae0ce);
+    box-shadow: 1px 1px 10px rgb(206, 206, 206);
+}
+
 .widgetlong{
     font-weight: 500;
     font-family: "Arial";
