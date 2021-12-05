@@ -4,7 +4,7 @@ const PostsModel = mongoose.model(
     "projetweb",
     {
         value: {
-            type: String,
+            type: Number,
             required: true
         },
         unit: {
