@@ -1,0 +1,52 @@
+.boutonLight{
+    height:1em;
+    border: none;
+    background : transparent;
+    text-align : center;
+}
+
+.lightName{
+    text-align: center;
+    padding: 0.6em;
+}
+
+.boutonLight img{
+    height:3em;
+    padding: 0.1em;
+}
+.boutonLight img:hover{
+    height:3.2em;
+    padding: 0.08em;
+}
+
+/*SCENE*/
+.sceneName{
+    text-align: center;
+    padding: 1em;
+    margin-left: 1em; 
+}
+
+.sceneName img{
+    height:3em;
+    padding: 1em;
+}
+
+
+/*TEMPERATURE*/
+.degres{
+    font-size: 0.8em;
+    padding-top: 0.2em;
+    text-align: left;
+    color: rgb(109, 109, 109);
+}
+.temperature{
+    font-size: 1em;
+    text-align: right;
+}
+.titreT{
+    padding :1em;
+    padding-left: 5em;
+    font-size: 0.9em;
+    text-align: center;
+    color: black;
+}
