@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import WidgetAppareilsCourt from '../components/WidgetAppareilsCourt';
 
@@ -6,7 +6,7 @@ const RequestTemperature = () => {
     
     const [temperature, setData]= useState([]);
 
-    // useEffect(() => {
+    useEffect(() => {
         var config = {
         method: 'get',
         url: 'https://api.smartthings.com/v1/devices/f95f3581-f986-4670-ac63-94c6c0656d56/components/main/capabilities/temperatureMeasurement/status',
@@ -23,7 +23,7 @@ const RequestTemperature = () => {
         .catch(function (error) {
         console.log(error);
         });
-    // }, []);
+    }, []);
 
     return (
         <div>

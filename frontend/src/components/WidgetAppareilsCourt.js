@@ -11,7 +11,6 @@ const WidgetAppareilsCourt = ({temperature}) => {
     return (
         <div className="widgetcourt">
             <div className="valeurT">
-                {temperature}
             </div>
         </div>
     );
