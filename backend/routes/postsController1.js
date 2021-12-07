@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const ObjectID = require('mongoose').Types.ObjectId;
 
-const { PostsModel } = require('../models/test1Model');
+const { PostsModel1 } = require('../models/model1');
 
 router.get('/', (req, res) => {
     PostsModel.find((err, docs) => {
@@ -12,10 +12,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    const newRecord = new PostsModel({
-        value: req.body.value,
-        unit: req.body.unit,
-        date: req.body.date,
+    const newRecord = new PostsModel1({
         temperature: req.body.temperature,
         unit: req.body.unit,
         heure: req.body.heure
@@ -33,9 +30,9 @@ router.put("/:id", (req, res) => {
         return res.status(400).send("ID unknow : " + req.params.id)
 
     const updateRecord = {
-        value: req.body.value,
+        temperature: req.body.temperature,
         unit: req.body.unit,
-        date: req.body.date
+        heure: req.body.heure
     };
 
     PostsModel.findByIdAndUpdate(

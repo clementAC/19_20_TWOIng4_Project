@@ -1,58 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-// import { Bar } from 'react-chartjs-2';
-
-// let myChart = new Chart(graph, {
-//     type: "bar",
-//     data: {
-//         labels: [
-//             "Ber",
-//             "Mfdf",
-//             "Fdf",
-//             "Mfdf",
-//             "Fdf",
-//             "Nd",
-//             "MPP",
-//             "Ber",
-//             "Fdf"
-//         ],
-//         datasets: [
-//             {
-//                 label: "Lettre",
-//                 data: [6, 8, 9, 0, 1, 3, 5, 17, 4, 5, 7, 13, 9, 1, 3, 5, 14, 6, 8, 9, 0, 1, 3, 5, 17, 4, 5, 7, 13, 9, 1, 3, 5, 14],
-//                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
-//                 borderColor: 'rgb(54, 162, 235)',
-//                 borderWidth: 1,
-//                 hoverBackgroundColor: 'rgb(54, 162, 235)'
-//             },
-//         ],
-//     },
-//     options: {
-//         title: {
-//             display: true,
-//             text: "Consommation",
-//             fontSize: 20,
-//         },
-//         legend: {
-//             display: false,
-//         },
-//         layout: {
-//             padding: {
-//                 top: 20,
-//             },
-//         },
-//     },
-// });
-
-import {
-    LineChart,
-    Line,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend
-} from "recharts";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 
 export default class App extends React.Component {
 
@@ -107,27 +55,3 @@ export default class App extends React.Component {
         );
     }
 }
-
-
-// const Script = () => {
-//     return (
-//         <div>
-//             <Bar
-//                 data={{
-//                     labels: [
-//                         'A',
-//                         'B',
-//                         'C',
-//                         'D'
-//                     ],
-//                     datasets: [
-//                         {
-//                             data: [10, 14, 4, 5]
-//                         },
-//                     ],
-//                 }}
-//             />
-//         </div>
-//     )
-// }
-// export default Script;
