@@ -3,6 +3,15 @@ import "../index.js";
 import axios from 'axios';
 import {Row, Col} from 'react-bootstrap';
 
+function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > milliseconds){
+        break;
+      }
+    }
+}
+
 export default class AfficheTemperature extends React.Component {
 
     constructor(props){
@@ -37,6 +46,7 @@ export default class AfficheTemperature extends React.Component {
                 }
             ));
         });
+        sleep(100);
         
     }
 
