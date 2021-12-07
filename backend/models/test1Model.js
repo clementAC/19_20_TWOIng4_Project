@@ -3,20 +3,21 @@ const mongoose = require("mongoose");
 const PostsModel = mongoose.model(
     "projetweb",
     {
-        age: {
-            type: String,
+        value: {
+            type: Number,
             required: true
         },
-        name: {
+        unit: {
             type: String,
             required: true
         },
         date: {
-            type: Date,
-            default: Date.now
+            type: String,
+            required: true
         }
     },
-    "test1"
+    "enedis",
+
 );
 
 module.exports = { PostsModel };
