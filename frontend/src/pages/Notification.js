@@ -3,30 +3,25 @@ import {Row, Container} from 'react-bootstrap';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import SectionMaison from '../components/SectionMaison';
-import SectionAppareils from '../components/SectionAppareils';import SectionTemperature from '../components/SectionTemperature';
+import SectionAppareils from '../components/SectionAppareils';
 import SectionScene from '../components/SectionScene';
-import imgTemp from '../img/temperature.png';
 
 
-const Home =() =>{
+const Notification =() =>{
     return (
-        <div className="home">
+        <div className="notification">
             <Navigation />
-            <Row lg md xs ="4" className="sectionPrincipal"><h1 className="titrePrincipal">Accueil</h1></Row>
+            <Row lg md xs ="4" className="sectionPrincipal"><h1 className="titrePrincipal">Notification</h1></Row>
             <Container>
                 <Row lg md xs ="4" className="titre">Maison</Row>
                 <SectionMaison/>
-                {/* <Row lg md xs ="4" className="titre"><img src={imgTemp} alt="ImageTemps" className="imgTemp"/>Température</Row> */}
-                <SectionTemperature/>
                 <Row lg md xs ="4" className="titre">Favoris</Row>
                 <SectionAppareils/>
                 <Row lg md xs ="4" className="titre">Scènes</Row>
                 <SectionScene/>
             </Container>
             <Footer/>
-
-            
             
         </div>);
 }
-export default Home;
+export default Notification;
