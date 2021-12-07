@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/Home';
+import Historique from './pages/Historique';
+import Notification from './pages/Notification';
+import Consomation from './pages/Consomation';
+import Error from './pages/Error';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+        <Routes>
+            <Route exact path="/" element={<Home/>} />
+            <Route exact path="/historique" element={<Historique/>} />
+            <Route exact path="/notification" element={<Notification/>} />
+            <Route exact path="/consomation" element={<Consomation/>} />
+            <Route path="*" element={<Error/>} />
+        </Routes>
+      </BrowserRouter>
   );
-}
+};
 
 export default App;

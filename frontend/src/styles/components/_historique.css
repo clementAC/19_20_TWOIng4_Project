@@ -1,0 +1,13 @@
+.componentsHistorique{
+    font-weight: 500;
+    min-height: px;
+    background-color: #EFF5FB;
+    padding : 1em;
+    margin: 0.3em;
+    border-radius: 10px;
+}
+
+.componentsHistorique:hover{
+    background: linear-gradient(to top, white, #727272);
+    box-shadow: 1px 1px 10px rgb(206, 206, 206);
+}

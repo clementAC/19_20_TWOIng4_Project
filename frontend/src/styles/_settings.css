@@ -1,0 +1,68 @@
+body {
+  margin: 100;
+  font-family: "Arial";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom right, #0e66d1, white);
+}
+
+code {
+  font-family: "Arial";
+}
+
+.card-body{
+  height: 10em;
+}
+
+.container{
+  padding: 0.5em;
+}
+
+.titre{
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin:1%;
+}
+.titre p{
+  margin: 0px;
+  padding-top:0.3em;
+}
+
+.sectionPrincipal{
+  text-align: center;
+  color: rgb(87, 87, 87);
+  background: linear-gradient(to top, rgba(119, 226, 253, 0.5), white);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.3);
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.titrePrincipal{
+  font-size: xx-large;
+  font-weight: 400;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.error{
+  background-color: #002a60;
+  text-align: center;
+  background: linear-gradient(to left, #002a60, #03386e);
+  color: white;
+}
+
+.imgerror{
+  width: 50%;
+  height: 50%;
+  box-shadow: 1px 1px 10px rgb(39, 39, 39);
+  margin: 3em;
+}
+  
+.imgTemp{
+  height:1em;
+  width: 1em;
+}
