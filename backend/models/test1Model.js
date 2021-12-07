@@ -16,7 +16,8 @@ const PostsModel = mongoose.model(
             required: true
         }
     },
-    "enedis"
+    "enedis",
+
 );
 
 module.exports = { PostsModel };

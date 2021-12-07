@@ -15,6 +15,7 @@ const Home =() =>{
     return (
         <div className="home">
             <Navigation />
+            <Row lg md xs ="4" className="sectionPrincipal"><h1 className="titrePrincipal">Accueil</h1></Row>
             <Container>
                 <Row lg md xs ="4" className="titre">
                     <Col xs md lg="1">

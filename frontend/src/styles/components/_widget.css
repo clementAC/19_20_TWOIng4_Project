@@ -49,7 +49,7 @@
     border-radius: 10px;
 }
 .widgetlong:hover{
-    background: linear-gradient(to top, white, #FCC47E);
+    background: linear-gradient(to top, white, #fc7e7e);
     box-shadow: 1px 1px 10px rgb(206, 206, 206);
 }
 
@@ -62,7 +62,7 @@
     border-radius: 10px;
 }
 .widgetcourt:hover{
-    background: linear-gradient(to top, white, #FCC47E);
+    background: linear-gradient(to top, white, #f7e389);
     box-shadow: 1px 1px 10px rgb(206, 206, 206);
 }
 
@@ -75,7 +75,7 @@
     border-radius: 10px;
 }
 .widgetscene:hover{
-    background: linear-gradient(to top, white, #ff8ecc);
+    background: linear-gradient(to top, white, #0684eb);
     box-shadow: 1px 1px 10px rgb(206, 206, 206);
 }
 .widgetscene img{
