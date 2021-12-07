@@ -1,6 +1,5 @@
 import React from 'react';
 import "../index.js";
-import axios from 'axios';
 import { Row, Col} from 'react-bootstrap';
 import imgMAllumer from '../img/imgMAllumer.png';
 import imgMEteind from '../img/imgMEteind.png';
@@ -35,8 +34,6 @@ function attribueImg(number){
             return (imgCafe);
     }
 }
-
-
 export default class AfficheScene extends React.Component {
 
     constructor(props){
