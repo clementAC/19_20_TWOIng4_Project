@@ -25,6 +25,10 @@ code {
   padding-left: var(--bs-gutter-x,.75rem);
   margin:1%;
 }
+.titre p{
+  margin: 0px;
+  padding-top:0.3em;
+}
 
 .error{
   background-color: #002a60;

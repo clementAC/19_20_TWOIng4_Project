@@ -20,16 +20,37 @@
 }
 
 /*SCENE*/
-.sceneName{
+.sceneName p{
     text-align: center;
-    padding: 1em;
-    margin-left: 1em; 
+    font-size: 1.3em;
+    margin-top: 0.8em;
 }
 
-.sceneName img{
+.sceneImg img{
     height:3em;
-    padding: 1em;
+    margin:0.5em;
+    margin-left: 1em;
 }
+
+.sceneButon{
+    height:1em;
+    border: none;
+    background : transparent;
+    text-align : center;
+}
+.sceneButon img{
+    height:2em;
+    margin: 1em;
+    margin-right: 1em;
+}
+.sceneButon img:hover{
+    height:2.2em;
+    margin: 1em;
+    margin-right: 1em;
+}
+
+
+
 
 
 /*TEMPERATURE*/
@@ -40,13 +61,13 @@
     color: rgb(109, 109, 109);
 }
 .temperature{
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: right;
 }
 .titreT{
     padding :1em;
     padding-left: 5em;
-    font-size: 0.9em;
+    font-size: 1.2em;
     text-align: center;
     color: black;
 }

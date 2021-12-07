@@ -70,11 +70,19 @@
     font-weight: 500;
     min-height: 75px;
     background-color: #EFF5FB;
-    padding : 1em;
+    padding :0.3em;
     margin: 0.3em;
     border-radius: 10px;
 }
 .widgetscene:hover{
-    background: linear-gradient(to top, white, #004F8F);
+    background: linear-gradient(to top, white, #ff8ecc);
     box-shadow: 1px 1px 10px rgb(206, 206, 206);
+}
+.widgetscene img{
+    margin-right : 1em;
+}
+
+.imgTemp{
+    height:2em;
+    width:2em;
 }

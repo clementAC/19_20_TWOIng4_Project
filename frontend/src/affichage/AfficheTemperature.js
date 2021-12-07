@@ -69,8 +69,8 @@ export default class AfficheTemperature extends React.Component {
                     {this.state.name}
                 </Row>
                 <Row lg md xs ="1">
-                    <Col xs ="12" md lg="8" className="temperature">{this.state.valeurT}</Col>
-                    <Col xs ="12" md lg="4" className="degres">°{this.state.uniteT}</Col>
+                    <Col xs md lg="8" className="temperature">{this.state.valeurT}</Col>
+                    <Col xs md lg="4" className="degres">°{this.state.uniteT}</Col>
                 </Row>
             </div>
             

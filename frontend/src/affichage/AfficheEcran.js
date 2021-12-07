@@ -86,7 +86,7 @@ export default class AfficheEcran extends React.Component {
             <div className="widgetcourt">
                 <Row>
                     <Col xs md lg="8" className="lightName">
-                        {this.state.name}
+                        <p>{this.state.name}</p>
                     </Col>
                     <Col xs md lg="4" className="lightStatue">
                         <button className="boutonLight"><img src = {this.state.img} alt="All"/></button>
