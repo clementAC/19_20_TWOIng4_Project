@@ -1,5 +1,4 @@
 import React from 'react';
-//import axios from 'axios';
 import "../index.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col} from 'react-bootstrap';

@@ -4,15 +4,7 @@ import axios from 'axios';
 import { Row, Col} from 'react-bootstrap';
 import imgOff from '../img/lightOff.png';
 import imgOn from '../img/lightOn.png';
-
-// function sleep(milliseconds) {
-//     var start = new Date().getTime();
-//     for (var i = 0; i < 1e7; i++) {
-//       if ((new Date().getTime() - start) > milliseconds){
-//         break;
-//       }
-//     }
-// }
+import RulesReturn from '../components/RulesReturn.js';
 
 export default class AfficheLight extends React.Component {
 
@@ -24,6 +16,7 @@ export default class AfficheLight extends React.Component {
             switch : "Off",
             img : imgOff,
             url : 'https://api.smartthings.com/v1/devices/'+ props.id +'/components/main/capabilities/switch/status',
+            id : props.id,
         }
         this.handleClick = this.handleClick.bind(this);
     }
@@ -50,19 +43,23 @@ export default class AfficheLight extends React.Component {
     }
 
     handleClick(){
+        let url = new RulesReturn(this.state.id, this.state.switch);
+        const urlT = url.returnRulesID;
+        
         var config = {
-            method: 'get',
-            url: this.state.url,
+            method: 'post',
+            url: 'https://api.smartthings.com/rules/execute/'+ urlT +'?locationId=9f29e8d1-a97e-41ec-b62f-645eab2980a6',
             headers: { 
-                'Authorization': 'Bearer 41f76958-9ad9-4291-85b0-dd741c65794a'
+                'Authorization': 'Bearer bda5ce2c-6f5f-43f0-9d5a-287df823b0cc'
             }
-        };
-    
+            };
+
         axios(config)
-        .then(response =>{
-            this.setState(state => ({
-                switch : response.data.switch.value,
-            }));
+        .then(function (response) {
+        console.log(JSON.stringify(response.data));
+        })
+        .catch(function (error) {
+        console.log(error);
         });
     }
 
@@ -85,7 +82,7 @@ export default class AfficheLight extends React.Component {
                         {this.state.name}
                     </Col>
                     <Col xs md lg="4" className="lightStatue">
-                        <button className="boutonLight"><img src = {this.state.img} alt="All"/></button>
+                        <button className="boutonLight" onClick = {this.handleClick}><img src = {this.state.img} alt="All"/></button>
                     </Col>
                 </Row>
             </div>

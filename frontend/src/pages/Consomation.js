@@ -15,7 +15,6 @@ const Consomation = () => {
             <Footer />
 
 
-
         </div>);
 }
 export default Consomation;
